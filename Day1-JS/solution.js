@@ -5,8 +5,7 @@ const process = (text)=>{
     document.getElementById('result').value = res
 }
 
-const clear = ()=>{
-    alert('test')
-    document.getElementsByName('num1')[0].value = '';
-    document.getElementsByName('num2')[0].value = '';
+function clearNum(){
+    document.getElementsByName('num1')[0].value = null;
+    document.getElementsByName('num2')[0].value = null;
 }
