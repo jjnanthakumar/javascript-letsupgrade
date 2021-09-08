@@ -1,0 +1,5 @@
+1. Create two number variables and perform all kinds of binary operation on them
+
+2. Create a array with 10 numbers and print only the even numbers with a loop from that array
+
+3. Create a array with five city names and print it in reverse order

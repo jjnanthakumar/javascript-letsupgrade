@@ -1,1 +1,0 @@
-Create two number variables and perform all kinds of binary operation on them
