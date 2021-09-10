@@ -4,23 +4,44 @@
 <head>
     <title>JS Essentials</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css"
+        integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
-    <h1>Simple Calculator</h1>
+    <h1>Simple Calculator</h1><br/>
 
     <input type="number" name="num1" placeholder="Number 1">
+    <br /><br />
     <input type="number" name="num2" placeholder="Number 2">
-    <br/><br/>
-    <button onclick="process(this.innerText)">+</button>
-    <button onclick="process(this.innerText)">-</button>
-    <button onclick="process(this.innerText)">*</button>
-    <button onclick="process(this.innerText)">/</button>
-    <button onclick="process(this.innerText)">%</button>
-    <button class='clear' onclick="clearNum()">clear</button>
-    <br/>
-    <h2>Result </h2>
+    <br /><br />
+    <button class='btn btn-primary'onclick="process(this.innerText)">+</button>
+    <button class='btn btn-primary' onclick="process(this.innerText)">-</button>
+    <button class='btn btn-primary' onclick="process(this.innerText)">*</button>
+    <button class='btn btn-primary' onclick="process(this.innerText)">/</button>
+    <button class='btn btn-primary' onclick="process(this.innerText)">%</button>
+    <button class='btn btn-danger' onclick="clearNum()">clear</button>
+    <br /><br/>
+    <h2>Result </h2><br/>
     <input class='result' type="text" id='result' contenteditable="false">
+    <br /><br />
+    <div class="container">
+        <h1>Todo List</h1>
+        <input type="text" placeholder="Task..." id="inp" /><br/>
+        <button class='btn btn-success' onclick="addTask()"><i class="fa fa-plus"></i></button>
+        <!-- <button class='btn btn-s' onclick="changeColor()">Change Color</button> -->
+        <div id="two" class="two">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.min.js"
+        integrity="sha512-ewfXo9Gq53e1q1+WDTjaHAGZ8UvCWq0eXONhwDuIoaH8xz2r96uoAYaQCm1oQhnBfRXrvJztNXFsTloJfgbL5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./solution.js"></script>
     <script>
 
@@ -92,10 +113,6 @@
         else {
             console.log("BYE");
         }
-
-
-
-
 
     </script>
 
